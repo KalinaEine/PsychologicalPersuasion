@@ -1,0 +1,21 @@
+# API Configuration
+api_key: ""  # Replace with your API key
+base_url: ""  # Optional, if you need to specify a custom API endpoint
+
+# Model Configuration
+model_paths:
+  # gpt4o: "gpt-4o"
+  llama3: "meta-llama/Llama-3.1-8B-Instruct"
+  # qwen: "Qwen/Qwen2.5-7B-Instruct"
+  # falcon: "tiiuae/Falcon3-7B-Instruct"
+
+# Hugging Face Model Parameter Configuration
+model_params:
+  torch_dtype: "float16"  # Or "float16", depending on your GPU support
+  device_map: "auto"  # Automatically handle model loading onto GPU
+  trust_remote_code: true
+  use_auth_token: true  # Set to true if the model requires authentication
+
+# Dataset Configuration
+dataset_path: "" # Path to your dataset file
+output_path: ""  # Path to save the processed dataset
