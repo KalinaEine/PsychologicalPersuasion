@@ -14,7 +14,7 @@ This repository implements:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/multi-agent-persuasion.git
-   cd multi-agent-persuasion
+   git clone https://github.com/KalinaEine/PsychologicalPersuasion.git
+   cd PsychologicalPersuasion
    ```
    
