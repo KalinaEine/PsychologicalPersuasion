@@ -1,6 +1,6 @@
 # PsychologicalPersuasion
 
-A modular system for evaluating and training LLM-based agents in persuasive dialogue scenarios, supporting dynamic strategy integration and cross-model benchmarking.
+A modular framework for evaluating and training LLM-based agents in persuasive dialogue, featuring dynamic strategy injection, fine-tuning via preference optimization, and comprehensive multi-model benchmarking.
 
 ## 📌 Overview
 
