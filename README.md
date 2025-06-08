@@ -38,6 +38,7 @@ First, edit `config.yaml` with your specific settings.
   --listener [MODEL_NAME] \  # e.g., llama3, qwen, gpt4o
   --persuader [MODEL_NAME] \  # Different from listener
   --batch_size 8
+</code></pre>
 Purpose: Establishes baseline performance without persuasive techniques
 
 #### Phase 2: Strategy Evaluation
