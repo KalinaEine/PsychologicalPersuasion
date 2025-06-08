@@ -29,12 +29,38 @@ This repository implements:
    
 First, edit `config.yaml` with your specific settings.
 
-3. Run Evaluation
+2. Run Evaluation
    
-Test persuasion strategies with different model combinations:
-   ```bash
-   python strategy_test.py --config_path config.yaml --strategy authority_effect --listener llama3 --persuader gpt4o --batch_size 8
-  ```
+### Phase 1: Baseline Testing (No Strategy)
+```bash
+python strategy_test.py 
+  --config_path config.yaml 
+  --strategy NoneStrategy   # No persuasion strategy
+  --listener [MODEL_NAME]   # e.g., llama3, qwen, gpt4o
+  --persuader [MODEL_NAME]  # Different from listener
+  --batch_size 8
+```
+Purpose: Establishes baseline performance without persuasive techniques
+
+### Phase 2: Strategy Evaluation
+bash
+python strategy_test.py \
+  --config_path config.yaml \
+  --strategy [STRATEGY_NAME] \  # e.g., authority_effect
+  --listener [MODEL_NAME] \     # Same model for both
+  --persuader [MODEL_NAME] \    # Same as listener
+  --batch_size 8
+Available Strategies (defined in strategy_agent.py):
+
+authority_effect - Leverage perceived expertise
+
+flattery_trap - Excessive praise technique
+
+repetition_effect - Message reinforcement
+
+information_isolation - Controlled information flow
+
+... [11+ others]
 
 3. Generate DPO Dataset
    
@@ -43,7 +69,7 @@ Prepare training data from evaluation results:
    python strategy_generate_dataset.py --data_dir ./results --output_path ./dpo_data.jsonl
    ```
 
-5. Train with DPO
+4. Train with DPO
    
 Fine-tune models using preference data:
    ```bash
