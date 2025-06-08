@@ -25,24 +25,17 @@ This repository implements:
 
 ## 🚀 Quick Start
 
-1. Configuration Setup
+### 1. Configuration Setup
    
 First, edit `config.yaml` with your specific settings.
 
-2. Run Evaluation
+### 2. Run Evaluation
    
-### Phase 1: Baseline Testing (No Strategy)
-```bash
-python strategy_test.py \\
-  --config_path config.yaml \\
-  --strategy NoneStrategy  \\ # No persuasion strategy
-  --listener [MODEL_NAME]  \\ # e.g., llama3, qwen, gpt4o
-  --persuader [MODEL_NAME] \\ # Different from listener
-  --batch_size 8
-```
+#### Phase 1: Baseline Testing (No Strategy)
+<pre><code>```bash python strategy_test.py \ --config_path config.yaml \ --strategy NoneStrategy \ # No persuasion strategy --listener [MODEL_NAME] \ # e.g., llama3, qwen, gpt4o --persuader [MODEL_NAME] \ # Different from listener --batch_size 8 ```</code></pre>
 Purpose: Establishes baseline performance without persuasive techniques
 
-### Phase 2: Strategy Evaluation
+#### Phase 2: Strategy Evaluation
 ```bash
 python strategy_test.py \\
   --config_path config.yaml \\
