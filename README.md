@@ -26,21 +26,25 @@ This repository implements:
 ## 🚀 Quick Start
 
 1. Configuration Setup
+   
 First, edit `config.yaml` with your specific settings.
 
-2. Run Evaluation
+3. Run Evaluation
+   
 Test persuasion strategies with different model combinations:
    ```bash
    python strategy_test.py --config_path config.yaml --strategy authority_effect --listener llama3 --persuader gpt4o --batch_size 8
   ```
 
 3. Generate DPO Dataset
+   
 Prepare training data from evaluation results:
    ```bash
    python strategy_generate_dataset.py --data_dir ./results --output_path ./dpo_data.jsonl
    ```
 
-4. Train with DPO
+5. Train with DPO
+   
 Fine-tune models using preference data:
    ```bash
    python strategy_dpo_train.py
