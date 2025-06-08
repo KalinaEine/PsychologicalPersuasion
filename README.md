@@ -1,6 +1,6 @@
-# PsychologicalPersuasion
+# Psychological Persuasion
 
-A modular framework for evaluating and training LLM-based agents in persuasive dialogue, featuring dynamic strategy injection, fine-tuning via preference optimization, and comprehensive multi-model benchmarking. Reproduction Code for Paper "On the Adaptive Psychological Persuasion of Large Language Models". The preprint of our paper is publicly available at [this link]().
+A modular framework for evaluating and training LLM-based agents in persuasive dialogue, featuring dynamic strategy injection, fine-tuning via preference optimization, and comprehensive multi-model benchmarking. Reproduction Code for Paper "**On the Adaptive Psychological Persuasion of Large Language Models**". The preprint of our paper is publicly available at [this link]().
 
 ## 📌 Overview
 
