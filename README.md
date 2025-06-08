@@ -43,9 +43,9 @@ First, edit `config.yaml` with your specific settings.
 #### Phase 1: Baseline Testing 
 <pre><code>python strategy_test.py \
   --config_path config.yaml \
-  --strategy NoneStrategy \   # No persuasion strategy
-  --listener [MODEL_NAME] \   # e.g., llama3, qwen, gpt4o
-  --persuader [MODEL_NAME] \  # Different from listener
+  --strategy NoneStrategy \     # No persuasion strategy
+  --listener [MODEL_NAME] \     # e.g., llama3, qwen, gpt4o
+  --persuader [MODEL_NAME] \    # Different from listener
   --batch_size 8
 </code></pre>
 Purpose: Establishes baseline performance without persuasive techniques
@@ -127,8 +127,8 @@ After DPO training (Section 4), evaluate your fine-tuned model with persuasion s
 <pre><code># Original vs DPO comparison
    python strategy_test.py \
   --config_path config.yaml \
-  --strategy [STRATEGY_NAME] \  # e.g., authority_effect
-  --listener  [MODEL_NAME]\  # Base model
+  --strategy [STRATEGY_NAME] \       # e.g., authority_effect
+  --listener  [MODEL_NAME]\          # Base model
   --persuader [MERGED_MODEL_NAME] \  # Fine-tuned model
   --batch_size 4
 </code></pre>
