@@ -1,6 +1,6 @@
 # PsychologicalPersuasion
 
-A modular framework for evaluating and training LLM-based agents in persuasive dialogue, featuring dynamic strategy injection, fine-tuning via preference optimization, and comprehensive multi-model benchmarking.
+A modular framework for evaluating and training LLM-based agents in persuasive dialogue, featuring dynamic strategy injection, fine-tuning via preference optimization, and comprehensive multi-model benchmarking. Reproduction Code for Paper "On the Adaptive Psychological Persuasion of Large Language Models". The preprint of our paper is publicly available at [this link]().
 
 ## 📌 Overview
 
@@ -21,6 +21,16 @@ This repository implements:
    ```bash
    pip install -r requirements.txt
    ```
+
+### 3. Acquire Dataset
+
+We use the following files from the Counterfact-1K dataset:
+
+`counterfact-val.json`: used for model evaluation
+
+`counterfact-train.json`: used to generate DPO training data
+
+You can access the dataset here: [Counterfact-1K](https://github.com/Jometeorie/KnowledgeSpread/tree/main/data/counterfact)
 
 ## 🚀 Quick Start
 
