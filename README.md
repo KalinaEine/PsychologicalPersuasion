@@ -11,13 +11,13 @@ This repository implements:
 
 ## 🛠️ Installation
 
-### 1. Clone the repository:
+### 1. Clone the repository
    ```bash
    git clone https://github.com/KalinaEine/PsychologicalPersuasion.git
    cd PsychologicalPersuasion
    ```
    
-### 2. Install dependencies:
+### 2. Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
@@ -40,7 +40,7 @@ First, edit `config.yaml` with your specific settings.
 
 ### 2. Run Evaluation
    
-#### Phase 1: Baseline Testing (No Strategy)
+#### Phase 1: Baseline Testing 
 <pre><code>python strategy_test.py \
   --config_path config.yaml \
   --strategy NoneStrategy \  # No persuasion strategy
@@ -69,11 +69,11 @@ Available Strategies (defined in `strategy_agent.py`):
 
 **information_isolation** - Controlled information flow
 
-... [7+ others]
+... [7+ others](https://github.com/KalinaEine/PsychologicalPersuasion/blob/main/strategy_agent.py)
 
 #### Phase 3: Four Semantic Domains Evaluation
 
-In this phase, model performance is evaluated using both general-purpose metrics (eval.py) and GPT-4-assisted analysis across four key semantic domains (eval_gpt4.py).
+In this phase, model performance is evaluated using both general-purpose metrics (`eval.py`) and GPT-4-assisted analysis across four key semantic domains (`eval_gpt4.py`).
 
 #### Basic Metrics Evaluation (`eval.py`)
 
