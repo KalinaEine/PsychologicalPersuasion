@@ -12,13 +12,13 @@ This repository implements:
 
 ## 🛠️ Installation
 
-1. Clone the repository:
+### 1. Clone the repository:
    ```bash
    git clone https://github.com/KalinaEine/PsychologicalPersuasion.git
    cd PsychologicalPersuasion
    ```
    
-2. Install dependencies:
+### 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
@@ -52,24 +52,24 @@ Purpose: Establishes baseline performance without persuasive techniques
 
 Available Strategies (defined in strategy_agent.py):
 
-authority_effect - Leverage perceived expertise
+**authority_effect** - Leverage perceived expertise
 
-flattery_trap - Excessive praise technique
+**flattery_trap** - Excessive praise technique
 
-repetition_effect - Message reinforcement
+**repetition_effect** - Message reinforcement
 
-information_isolation - Controlled information flow
+**information_isolation** - Controlled information flow
 
-... [11+ others]
+... [7+ others]
 
-3. Generate DPO Dataset
+### 3. Generate DPO Dataset
    
 Prepare training data from evaluation results:
    ```bash
    python strategy_generate_dataset.py --data_dir ./results --output_path ./dpo_data.jsonl
    ```
 
-4. Train with DPO
+### 4. Train with DPO
    
 Fine-tune models using preference data:
    ```bash
