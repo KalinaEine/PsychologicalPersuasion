@@ -93,7 +93,7 @@ python eval_gpt4.py
    
 Prepare training data from evaluation results:
    ```bash
-   python strategy_generate_dataset.py --data_dir ./results --output_path ./dpo_data.jsonl
+   python strategy_generate_dataset.py
    ```
 
 ### 4. Train with DPO
