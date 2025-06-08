@@ -2,6 +2,9 @@
 
 A modular framework for evaluating and training LLM-based agents in persuasive dialogue, featuring dynamic strategy injection, fine-tuning via preference optimization, and comprehensive multi-model benchmarking. Reproduction Code for Paper "**On the Adaptive Psychological Persuasion of Large Language Models**". The preprint of our paper is publicly available at [this link]().
 
+![image](https://github.com/user-attachments/assets/482220f8-bbed-4b58-a6b5-ab369edd2a8f)
+
+
 ## 📌 Overview
 
 This repository implements:
