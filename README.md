@@ -62,7 +62,9 @@ Available Strategies (defined in strategy_agent.py):
 
 ... [7+ others]
 
-#### Phase 3: Strategy Evaluation
+#### Phase 3: Four Semantic Domains Evaluation
+
+
 
 ### 3. Generate DPO Dataset
    
