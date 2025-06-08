@@ -43,8 +43,8 @@ First, edit `config.yaml` with your specific settings.
 #### Phase 1: Baseline Testing 
 <pre><code>python strategy_test.py \
   --config_path config.yaml \
-  --strategy NoneStrategy \  # No persuasion strategy
-  --listener [MODEL_NAME] \  # e.g., llama3, qwen, gpt4o
+  --strategy NoneStrategy \   # No persuasion strategy
+  --listener [MODEL_NAME] \   # e.g., llama3, qwen, gpt4o
   --persuader [MODEL_NAME] \  # Different from listener
   --batch_size 8
 </code></pre>
