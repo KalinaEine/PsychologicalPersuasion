@@ -64,6 +64,30 @@ Available Strategies (defined in strategy_agent.py):
 
 #### Phase 3: Four Semantic Domains Evaluation
 
+This phase evaluates model performance using both none-classified metrics(`eval.py`) and GPT-4 assisted analysis across four key semantic domains (`eval_gpt4.py`).
+
+#### Basic Metrics Evaluation (`eval.py`)
+
+After **Phase 1** and **Phase 2**, run eval.py to save all json results to .csv file
+
+```bash
+python eval.py
+```
+
+#### GPT-4 Categorized Evaluation (eval_gpt4.py)
+
+GPT-4 assisted analysis across four key semantic domains.
+
+```bash
+python eval_gpt4.py
+```
+
+| Category | Description              | Example Prompts                     |
+|----------|--------------------------|-------------------------------------|
+| person   | Individuals/historical figures | "The profession of Arun Nehru is" |
+| geo      | Geographical locations   | "Kuala Langat, located in"|
+| culture  | Art/media/history        | "The language of Dehkhoda Dictionary is"|
+| life     | Daily life/technology    | "Sandy Bridge was a product of"|
 
 
 ### 3. Generate DPO Dataset
