@@ -33,23 +33,24 @@ First, edit `config.yaml` with your specific settings.
    
 ### Phase 1: Baseline Testing (No Strategy)
 ```bash
-python strategy_test.py 
-  --config_path config.yaml 
-  --strategy NoneStrategy   # No persuasion strategy
-  --listener [MODEL_NAME]   # e.g., llama3, qwen, gpt4o
-  --persuader [MODEL_NAME]  # Different from listener
+python strategy_test.py \\
+  --config_path config.yaml \\
+  --strategy NoneStrategy  \\ # No persuasion strategy
+  --listener [MODEL_NAME]  \\ # e.g., llama3, qwen, gpt4o
+  --persuader [MODEL_NAME] \\ # Different from listener
   --batch_size 8
 ```
 Purpose: Establishes baseline performance without persuasive techniques
 
 ### Phase 2: Strategy Evaluation
-bash
-python strategy_test.py \
-  --config_path config.yaml \
-  --strategy [STRATEGY_NAME] \  # e.g., authority_effect
-  --listener [MODEL_NAME] \     # Same model for both
-  --persuader [MODEL_NAME] \    # Same as listener
+```bash
+python strategy_test.py \\
+  --config_path config.yaml \\
+  --strategy [STRATEGY_NAME] \\  # e.g., authority_effect
+  --listener [MODEL_NAME] \\     # Same model for both
+  --persuader [MODEL_NAME] \\    # Same as listener
   --batch_size 8
+```
 Available Strategies (defined in strategy_agent.py):
 
 authority_effect - Leverage perceived expertise
