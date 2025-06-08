@@ -32,12 +32,16 @@ First, edit `config.yaml` with your specific settings.
 ### 2. Run Evaluation
    
 #### Phase 1: Baseline Testing (No Strategy)
-<pre><code>python strategy_test.py --config_path config.yaml --strategy NoneStrategy --listener [MODEL_NAME] --persuader [MODEL_NAME] --batch_size 8 </code></pre>
+<pre><code>python strategy_test.py \
+  --config_path config.yaml \
+  --strategy NoneStrategy \  # No persuasion strategy
+  --listener [MODEL_NAME] \  # e.g., llama3, qwen, gpt4o
+  --persuader [MODEL_NAME] \  # Different from listener
+  --batch_size 8
 Purpose: Establishes baseline performance without persuasive techniques
 
 #### Phase 2: Strategy Evaluation
-<pre><code>
-python strategy_test.py \
+<pre><code>python strategy_test.py \
   --config_path config.yaml \
   --strategy [STRATEGY_NAME] \  # e.g., authority_effect
   --listener [MODEL_NAME] \     # Same model for both
