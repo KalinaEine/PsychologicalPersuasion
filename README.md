@@ -49,7 +49,7 @@ Purpose: Establishes baseline performance without persuasive techniques
   --batch_size 8
 </code></pre>
 
-Available Strategies (defined in strategy_agent.py):
+Available Strategies (defined in `strategy_agent.py`):
 
 **authority_effect** - Leverage perceived expertise
 
@@ -73,7 +73,7 @@ After completing **Phase 1** and **Phase 2**, run the script below to convert al
 python eval.py
 ```
 
-#### GPT-4 Categorized Evaluation (eval_gpt4.py)
+#### GPT-4 Categorized Evaluation (`eval_gpt4.py`)
 
 Run GPT-4-assisted evaluation to analyze results across four key semantic domains:
 
