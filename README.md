@@ -62,6 +62,8 @@ Available Strategies (defined in strategy_agent.py):
 
 ... [7+ others]
 
+#### Phase 3: Strategy Evaluation
+
 ### 3. Generate DPO Dataset
    
 Prepare training data from evaluation results:
@@ -76,3 +78,30 @@ Fine-tune models using preference data:
    python strategy_dpo_train.py
    ```
 
+Merge the DPO-trained weights into the base model:
+   ```bash
+   python merge_dpo_to_base.py
+   ```
+
+### 5. Model Testing Pipeline
+
+#### Test Fine-tuned DPO Models
+
+After DPO training (Section 4), evaluate your fine-tuned model with persuasion strategies:
+
+<pre><code># Original vs DPO comparison
+   python strategy_test.py \
+  --config_path config.yaml \
+  --strategy [STRATEGY_NAME] \  # e.g., authority_effect
+  --listener  [MODEL_NAME]\  # Base model
+  --persuader [MERGED_MODEL_NAME] \  # Fine-tuned model
+  --batch_size 4
+</code></pre>
+
+#### MMLU Benchmark Evaluation
+
+Assess general knowledge capabilities:
+
+```bash
+python MMLU.py
+```
