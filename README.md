@@ -7,7 +7,6 @@ A modular system for evaluating and training LLM-based agents in persuasive dial
 This repository implements:
 - **Persuader-Listener Agent Architecture**: Two-agent interaction with customizable strategies
 - **DPO Training Pipeline**: Fine-tuning with preference data
-- **Multi-Model Support**: Local (LLaMA-3, Qwen, Falcon) and API-based (GPT-4o, Gemini) models
 - **Comprehensive Evaluation**: Accuracy, robustness, and locality metrics
 
 ## 🛠️ Installation
@@ -64,11 +63,11 @@ Available Strategies (defined in strategy_agent.py):
 
 #### Phase 3: Four Semantic Domains Evaluation
 
-This phase evaluates model performance using both none-classified metrics(`eval.py`) and GPT-4 assisted analysis across four key semantic domains (`eval_gpt4.py`).
+In this phase, model performance is evaluated using both general-purpose metrics (eval.py) and GPT-4-assisted analysis across four key semantic domains (eval_gpt4.py).
 
 #### Basic Metrics Evaluation (`eval.py`)
 
-After **Phase 1** and **Phase 2**, run eval.py to save all json results to .csv file
+After completing **Phase 1** and **Phase 2**, run the script below to convert all JSON results into a CSV file:
 
 ```bash
 python eval.py
@@ -76,7 +75,7 @@ python eval.py
 
 #### GPT-4 Categorized Evaluation (eval_gpt4.py)
 
-GPT-4 assisted analysis across four key semantic domains.
+Run GPT-4-assisted evaluation to analyze results across four key semantic domains:
 
 ```bash
 python eval_gpt4.py
