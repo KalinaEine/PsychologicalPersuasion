@@ -33,7 +33,6 @@ def main():
             metrics.append(m)
         except Exception as e:
             print(f"Error processing {json_file}: {e}")
-    # 写入csv
     with open('results_eval_agent1.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['file', 'total', 'accuracy', 'robust_accuracy', 'locality_accuracy'])
         writer.writeheader()
